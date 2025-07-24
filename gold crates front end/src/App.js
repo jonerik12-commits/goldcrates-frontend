@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState('Connecting...');
 
   useEffect(() => {
-    fetch('https://github.com/jonerik12-commits/goldcrates-frontend')
+   fetch('https://goldcrates-801d48bd55f3-b267bdc53471.herokuapp.com/')
       .then((res) => res.text())
       .then((data) => setMessage(data))
       .catch(() => setMessage('Failed to connect to backend'));
